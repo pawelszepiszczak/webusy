@@ -1,0 +1,322 @@
+h1{
+    font-size: 3em;
+    font-weight: 900;
+    opacity: 1;
+    color:rgba(255, 255, 255, 0.8);
+    text-shadow: black 0em 0em 1em;
+}
+
+
+.view {
+    background: url("../tlo.jpg")no-repeat center center;
+    background-size: cover;
+}
+    
+.navbar {
+    background-color: transparent;
+}
+
+.top-nav-collapse {
+    background-color: rgb(116, 22, 170);
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: rgb(116, 22, 170);
+    }
+}
+
+.feature-box-section {
+    padding-top:60px;
+    padding-bottom:60px;
+    background:#d9d9d9;
+
+}
+.feature-col-box {
+    margin-bottom: 50px;
+}
+.mb-52 {
+    margin-bottom: 52px;
+}
+.feature-box-icon {
+    background: #8410c7 none repeat scroll 0 0;
+    border-radius: 50%;
+    height: 70px;
+    line-height: 87px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 70px;
+    float: left;
+}
+.feature-box-icon i {
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+
+.feature-list-text {
+    margin-left: 85px;
+}
+.features-left-img img {width:100%;}
+
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #701b8a;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #620679 !important;
+ 
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+
+
+
+.box{
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+.box:before,
+.box:after{
+    content: "";
+    width: 100%;
+    height: 110%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%) scale(3);
+    -webkit-clip-path: polygon(50% 0%, 63% 32%, 98% 35%, 74% 60%, 79% 91%, 50% 70%, 21% 91%, 25% 60%, 2% 35%, 34% 29%);
+    clip-path: polygon(50% 0%, 63% 32%, 98% 35%, 74% 60%, 79% 91%, 50% 70%, 21% 91%, 25% 60%, 2% 35%, 34% 29%);
+    transition: all 0.5s ease 0s;
+}
+.box:after{
+    transform: translateX(-50%) scale(0);
+    transition-delay: 0.2s;
+}
+.box:hover:before{
+    opacity: 1;
+    transform: translateX(-50%) scale(0);
+}
+.box:hover:after{
+    opacity: 1;
+    transform: translateX(-50%) scale(3);
+}
+.box img{
+    width: 100%;
+    height: auto;
+}
+.box .box-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.box .inner-content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+    transform: translateY(-150%) scale(1);
+    transition: all 0.3s ease 0.2s;
+}
+.box:hover .inner-content{
+    transform: translateY(-50%);
+    opacity: 1;
+    transition:all 0.3s ease 0.2s;
+}
+.box .title{
+    font-size: 25px;
+    font-weight: 700;
+    color: #d97aff;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #000;
+    margin: 0 0 5px 0;
+}
+.box .post{
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+.box .icon{
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: -100%;
+    right: 50%;
+    opacity: 0;
+    z-index: 2;
+    transform: translateX(50%);
+    transition:all 0.3s ease 0.3s;
+}
+.box:hover .icon{
+    bottom: 15px;
+    opacity: 1;
+}
+.box .icon li{
+    display: inline-block;
+    margin: 0 3px;
+}
+.box .icon li a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius:50%;
+    background: #960fb8;
+    font-size: 19px;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+.box .icon li a:hover{
+    box-shadow: 0 0 4px 2px #9810aa;
+    background: #fff;
+    color: #000;
+}
+@media only screen and (max-width:990px){
+    .box{ margin-bottom: 30px; }
+}
+
+.marginUD{
+    margin: 2em auto;
+}
+
+/* Main styles */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+.text {
+  fill: rgba(180, 50, 255, 0.1);
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 12s infinite linear;
+  animation: stroke 12s infinite linear;
+}
+.text:nth-child(5n + 1) {
+  stroke: #f7ddb7;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+.text:nth-child(5n + 2) {
+  stroke: #e2caa6;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+.text:nth-child(5n + 3) {
+  stroke: #f7d6a4;
+  -webkit-animation-delay: -7.2s;
+  animation-delay: -7.2s;
+}
+.text:nth-child(5n + 4) {
+  stroke: #dbbe91;
+  -webkit-animation-delay: -9.6s;
+  animation-delay: -9.6s;
+}
+.text:nth-child(5n + 5) {
+  stroke: #e9d5b8;
+  -webkit-animation-delay: -12s;
+  animation-delay: -12s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+/* Other styles */
+
+
+.bodyy {
+ 
+  font: 4em Open Sans, Impact;
+  text-transform: uppercase;
+  margin: 0;
+  max-height:60px;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
