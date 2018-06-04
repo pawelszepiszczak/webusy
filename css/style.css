@@ -12,9 +12,12 @@ h1{
     color:#620679;
 }
 .tekstStopkaONas{
-   margin: 1em 1em;
+   margin: 1em 0em;
    text-align: justify;
    text-justify: inter-word;
+}
+.tekstStopkaONas li{
+    list-style-type:none;
 }
 .szareTlo{
     background:#d9d9d9;
@@ -339,9 +342,7 @@ svg {
   height: 100%;
   
 }
-ul{
-    padding:1em 2em;
-}
+
 .nav-link{
     padding: auto 1em;
 }
@@ -413,13 +414,13 @@ ul{
     font-family: 'Cabin Sketch', cursive;
     text-align: center;
     background:#d9d9d9;
-    color:#701b8a
+    color:#701b8a;
 }
 .pierwszyBoks{
     font-size:3em;
     font-family: 'Cabin Sketch', cursive;
     text-align: center;
-    color:#701b8a
+    color:#701b8a;
 }
 .outRightPadding{
     padding-right:0;
@@ -429,4 +430,70 @@ ul{
 }
 .ludek{
     max-width:18em;
+}
+
+
+.kontakt{
+    background-color: #793779;
+    color:#ffffff;
+}
+.kontaktBoks{
+    font-size:3em;
+    font-family: 'Cabin Sketch', cursive;
+    text-align: center;
+
+}
+.labelWhite{
+    color:#fff;
+}
+
+
+
+.okienkoKontakt{
+    width:100%;
+    font-size:1em;
+    line-height: 2em;
+    background-color: rgb(255, 255, 255,0.1);
+    border:0;
+    padding-left:0.5em;
+    color:#fff;
+}
+textarea:focus, input:focus{
+    outline: none;
+    overflow: hidden;
+}
+::placeholder {
+    color: rgb(255, 255, 255);
+    opacity: 0.5; /* Firefox */
+
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: rgb(255, 255, 255);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: rgb(255, 255, 255);}
+
+
+textarea {
+    resize: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.nav-link{
+    font-family: 'Amatic SC', cursive;
+font-size:2em;
+font-weight: 700;
+text-shadow: 1px 1px 2px #000;
+}
+
+.paddingTop60{
+    padding-top: 60px;
 }
